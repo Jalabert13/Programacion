@@ -8,8 +8,8 @@ public class Problema {
         BufferedWriter bw = null;
 
         try {
-            br = new BufferedReader(new FileReader("mensaje.txt"));
-            bw = new BufferedWriter(new FileWriter("mensaje_cifrado.txt"));
+            br = new BufferedReader(new FileReader("/home/usuario/IdeaProjects/prueba/mensaje.txt"));
+            bw = new BufferedWriter(new FileWriter("/home/usuario/IdeaProjects/prueba/mensaje_cifrado.txt"));
 
             String linea = null;
 
@@ -17,7 +17,10 @@ public class Problema {
 
             while ((linea = br.readLine()) != null) {
                 StringBuilder sb = new StringBuilder(linea.length());
+                for(int i = 0; i < linea.length(); i++){
+                    linea.trim();
 
+                }
 
                 /* Aquí vendría la lógica del programa */
 
